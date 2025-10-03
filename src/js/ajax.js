@@ -76,7 +76,7 @@ function renderUsers(users) {
 
 Оновлення DOM (Update): JavaScript оновлює лише потрібну частину HTML-сторінки, не перезавантажуючи її повністю.
 */
-
+/*
 const loadBtn = document.querySelector('.btn');
 const usersList = document.querySelector('.user-list');
 const USERS_URL = 'https://jsonplaceholder.typicode.com/users';
@@ -113,3 +113,4 @@ function handleLoadUsers() {
       loadBtn.disabled = false;
     });
 }
+*/
