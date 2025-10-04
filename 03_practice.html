@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheCatAPI practice</title>
+    <script type="module" crossorigin src="/requests/03_practice.js"></script>
+    <link rel="modulepreload" crossorigin href="/requests/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/requests/assets/vendor-CWxt7QI6.js">
+    <link rel="stylesheet" crossorigin href="/requests/assets/axios-DVmyiZ3n.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Форма пошуку -->
+      <form id="search-form" class="search-form">
+        <div class="form-group">
+          <label for="breed-input">Оберіть породу кота:</label>
+          <input
+            list="breeds-list"
+            id="breed-input"
+            class="input-field"
+            placeholder="Наприклад: Bengal"
+            autocomplete="off"
+          />
+          <datalist id="breeds-list"></datalist>
+        </div>
+
+        <button type="submit" class="btn">Знайти зображення</button>
+      </form>
+
+      <!-- Лоадер -->
+      <div id="loader" class="loader hidden">
+        <p>Завантаження...</p>
+      </div>
+    </div>
+
+    <!-- Контейнер для картки -->
+    <div id="cat-card" class="card-container"></div>
+
+  </body>
+</html>
